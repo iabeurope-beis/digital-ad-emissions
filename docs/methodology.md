@@ -55,7 +55,7 @@ Assets are assumed to be stored for 10 years. Use-phase emissions are excluded f
 #### Equation
 
 $$
-    {Storage\ Emissions} = \text{Total\_masters\_size} \times \Big( (\text{HDD\_copies} \times \text{HDD\_intensity}) + (\text{SSD\_copies} \times \text{SSD\_intensity}) + (\text{LTO\_copies} \times \text{LTO\_intensity}) + (\text{Cloud\_copies} \times \text{Cloud\_intensity}) \Big)
+    {Storage\ Emissions} = \text{Total\ Masters\ Size} \times \Big( (\text{HDD\_copies} \times \text{HDD\ intensity}) + (\text{SSD\ copies} \times \text{SSD\ intensity}) + (\text{LTO\ copies} \times \text{LTO\ intensity}) + (\text{Cloud\ copies} \times \text{Cloud\ intensity}) \Big)
 $$
 
 #### Example
@@ -135,23 +135,30 @@ The following adjustments are made depending on buy type:
     - Number of calls = 0
 
 #### Equations
-
 $$
-	{Server\ Use-phase\ Emissions} = \text{Number\ of\ Activated\ Servers} \times \text{Server\ Use-phase\ Intensity} \\
-\qquad \times \Big(0.5 \times \text{Local\ Grid\ Intensity} + 0.5 \times \text{Foreign\ Grid\ Intensity}\Big) \times \text{Impressions}
-$$
-
-$$
-	{Server\ Embodied\ Emissions} = \text{Number\ of\ Activated\ Servers} \times \text{Server\ Embodied\ Intensity} \times \text{Impressions}
+\begin{align*}
+    \text{Server Use-phase Emissions} &= \text{Number of Activated Servers} \times \text{Server Use-phase Intensity} \\
+    &\quad \times \left(0.5 \times \text{Local Grid Intensity} + 0.5 \times \text{Foreign Grid Intensity}\right) \times \text{Impressions}
+\end{align*}
 $$
 
 $$
-	{Network\ Use-phase\ Emissions} = \text{Number\ of\ Calls} \times \text{Network\ Use-phase\ Intensity} \times \text{RTB\ Payload} \\
-\qquad \times \Big(0.5 \times \text{Local\ Grid\ Intensity} + 0.5 \times \text{Foreign\ Grid\ Intensity}\Big) \times \text{Impressions}
+\begin{align*}
+    \text{Server Embodied Emissions} &= \text{Number of Activated Servers} \times \text{Server Embodied Intensity} \times \text{Impressions}
+\end{align*}
 $$
 
 $$
-	{Network\ Embodied\ Emissions} = \text{Number\ of\ Calls} \times \text{RTB\ Payload} \times \text{Network\ Embodied\ Intensity} \times \text{Impressions}
+\begin{align*}
+    \text{Network Use-phase Emissions} &= \text{Number of Calls} \times \text{Network Use-phase Intensity} \times \text{RTB Payload} \\
+    &\quad \times \left(0.5 \times \text{Local Grid Intensity} + 0.5 \times \text{Foreign Grid Intensity}\right) \times \text{Impressions}
+\end{align*}
+$$
+
+$$
+\begin{align*}
+    \text{Network Embodied Emissions} &= \text{Number of Calls} \times \text{RTB Payload} \times \text{Network Embodied Intensity} \times \text{Impressions}
+\end{align*}
 $$
 
 #### Example
@@ -299,10 +306,10 @@ This example shows how to estimate the emissions of delivering a video ad to use
 
 $$
 \begin{align*}
-    {Delivery\ Use\text{-}phase\ Emissions} &= \text{Payload} \times \text{Local\ Grid\ Intensity} \\
-    &\qquad \times \Big(\text{Mobile\ Connection\ Ratio} \times \text{Mobile\ Network\ Use\text{-}phase\ Energy\ Intensity} \\
-    &\qquad\qquad + \text{Fixed\ Connection\ Ratio} \times \text{Fixed\ Network\ Use\text{-}phase\ Energy\ Intensity} \\
-    &\qquad\qquad + \text{Edge\ Node\ Use\text{-}phase\ Energy\ Intensity}\Big) \\
+    {Delivery\ Use-phase\ Emissions} &= \text{Payload} \times \text{Local\ Grid\ Intensity} \\
+    &\qquad \times \Big(\text{Mobile\ Connection\ Ratio} \times \text{Mobile\ Network\ Use-phase\ Energy\ Intensity} \\
+    &\qquad\qquad + \text{Fixed\ Connection\ Ratio} \times \text{Fixed\ Network\ Use-phase\ Energy\ Intensity} \\
+    &\qquad\qquad + \text{Edge\ Node\ Use-phase\ Energy\ Intensity}\Big) \\
     &\qquad \times \text{Impressions} \\
     &= 2.85 \times 2.87 \times 10^{-1} \\
     &\qquad \times \Big(0.2569 \times 1.17 \times 10^{-4} + 0.7431 \times 1.65 \times 10^{-5} + 4.30 \times 10^{-7}\Big) \\
@@ -410,9 +417,9 @@ This example estimates the emissions of loading ads on mobiles in Austria. It us
 
 $$
 \begin{align*}
-{Device\ Use\text{-}phase\ Emissions} 
-    &= \text{View Time} \times \text{Device Use\text{-}phase Energy Intensity} \times \text{Local Grid Intensity} \times \text{Impressions} \\
-    &= \text{View Time} \times \text{Mobile Use\text{-}phase Energy Intensity} \times \text{Local Grid Intensity} \times \text{Impressions} \\
+{Device\ Use-phase\ Emissions} 
+    &= \text{View\ Time} \times \text{Device\ Use-phase\ Energy\ Intensity} \times \text{Local\ Grid\ Intensity} \times \text{Impressions} \\
+    &= \text{View\ Time} \times \text{Mobile\ Use-phase\ Energy\ Intensity} \times \text{Local\ Grid\ Intensity} \times \text{Impressions} \\
     &= 3 \times 1.30 \times 10^{-6} \times 1.02 \times 10^{-1} \times 100{,}000 \\
     &= 3 \times 1.30 \times 10^{-6} \times 0.102 \times 100{,}000 \\
     &= 3 \times 1.326 \times 10^{-7} \times 100{,}000 \\
@@ -424,8 +431,8 @@ $$
 $$
 \begin{align*}
 {Device\ Embodied\ Emissions} 
-    &= \text{View Time} \times \text{Device Embodied Intensity} \times \text{Impressions} \\
-    &= \text{View Time} \times \text{Mobile Embodied Intensity} \times \text{Impressions} \\
+    &= \text{View\ Time} \times \text{Device\ Embodied\ Intensity} \times \text{Impressions} \\
+    &= \text{View\ Time} \times \text{Mobile\ Embodied\ Intensity} \times \text{Impressions} \\
     &= 3 \times 6.55 \times 10^{-6} \times 100{,}000 \\
     &= 3 \times 0.00000655 \times 100{,}000 \\
     &= 0.00001965 \times 100{,}000 \\

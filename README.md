@@ -1,4 +1,4 @@
-# OpenGHG: Methodology for Estimating Digital Ad Emissions
+# Methodology for Estimating Digital Ad Emissions
 
 ## Introduction
 
@@ -22,7 +22,7 @@ The emissions estimation methodology including examples.
 
 A summary of the methodology's data points and sources.
 
-### [Disclosure](docs/discloure.md)
+### [Disclosure](docs/disclosure.md)
 
 A standard disclosure form for vendors to describe their capabilities in applying the methodology.
 
