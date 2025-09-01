@@ -1,0 +1,7 @@
+site_name: Digital Ad Emissions Methodology
+nav:
+  - Home: index.md
+  - Design Principles: design.md
+  - Data Sources: data.md
+  - Methodology: methodology.md
+  - Disclosure Standard: disclosure.md

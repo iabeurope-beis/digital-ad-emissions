@@ -55,7 +55,7 @@ Assets are assumed to be stored for 10 years. Use-phase emissions are excluded f
 #### Equation
 
 $$
-    {Storage\ Emissions} = \text{Total\ Masters\ Size} \times \Big( (\text{HDD\_copies} \times \text{HDD\ intensity}) + (\text{SSD\ copies} \times \text{SSD\ intensity}) + (\text{LTO\ copies} \times \text{LTO\ intensity}) + (\text{Cloud\ copies} \times \text{Cloud\ intensity}) \Big)
+    {Storage\ Emissions} = \text{Total\ Masters\ Size} \times \Big( (\text{HDD\ copies} \times \text{HDD\ intensity}) + (\text{SSD\ copies} \times \text{SSD\ intensity}) + (\text{LTO\ copies} \times \text{LTO\ intensity}) + (\text{Cloud\ copies} \times \text{Cloud\ intensity}) \Big)
 $$
 
 #### Example
