@@ -1,0 +1,27 @@
+name: "Ask a Question"
+description: Request clarification about the methodology
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking a question! Please provide as much context as possible.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Clearly state what you would like clarified.
+      placeholder: "e.g., How should uncertainty be disclosed?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Add any background, specific file/section reference, or examples.
+      placeholder: "e.g., This question arises when reading the Delivery section in docs/methodology.md"
+    validations:
+      required: false

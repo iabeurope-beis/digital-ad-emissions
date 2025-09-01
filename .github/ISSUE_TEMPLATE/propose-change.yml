@@ -1,0 +1,45 @@
+name: "Propose a Change"
+description: Suggest a change to the methodology documentation or methodology
+title: "[Proposal]: "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing! Please fill in the details below so we can evaluate your proposal.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you addressing?
+      description: Describe the issue, gap, or shortcoming you see.
+      placeholder: "e.g., The methodology does not cover [X] which leads to underestimation in [Y]."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What’s your proposed change?
+      description: Be as specific as possible, including which section(s) would be updated.
+      placeholder: "e.g., Add a new subsection under methodology/calculations.md covering [X]."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or references
+      description: Provide citations, data sources, or other materials that support your proposal.
+      placeholder: "e.g., IPCC Guidelines 2019, Section 3.2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: How will this change improve the framework? Who benefits?
+      placeholder: "e.g., Increases accuracy for selection estimates."
+    validations:
+      required: false
