@@ -9,7 +9,3 @@ This collection provides principles, data sources, methodologies, and a standard
 - [Data Sources](data.md)  
 - [Methodology](methodology.md)  
 - [Disclosure Standard](disclosure.md)
-
----
-
-*For more details on contributing or proposing changes, please use the repository’s [Issues](../issues) section.*
