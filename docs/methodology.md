@@ -245,10 +245,11 @@ The table below contains information on how to calculate payload depending on th
 
 | Level | Method | Display Default | Video Default | Notes |
 |-------|--------|-----------------|---------------|-------|
-| 0 | Default view time | 3 seconds | 30 seconds | For cases where no view time data is available. |
-| 1 | Average campaign-level view time | | | Flat campaign average view time used for every device type. |
-| 2 | Average device-type view time | | | Average view time available per device type. |
-| Overhead | Minimum view time | 1 second | 2 seconds | Based on MRC standard for viewability - used to account for device usage in cases where view time is not reported for ads that fail to meet viewability specifications. |
+| 0 | Default payload | 0.25 MB | 4 MB, 6 MB instream | Instream figure should be used in environments where heavy ad intervention does not apply. |
+| 1 | 100% of creative data assumed to be transferred | | | |
+| 2 | Completion rate proxy | | | E.g. 50% video completion rate &rarr; 50% of video data transferred. If view time data is available in quartiles rather than as a mean, calculations should overestimate by using the higher bound of the quartile (e.g. if a given portion of users is reported to have watched between 0 and 3 seconds of a video ad, they are assumed to have watched 3 seconds).|
+| 3 | Data transfer measurement | | | Option when tooling that enables logging precise payloads is available. Eliminates need for overhead term. |
+| Overhead | Default non-creative asset payload | 0.05 MB | 0.35 MB | Add-on to levels 0-2. Overestimation due to caching. |
 
 #### Data
 
@@ -357,11 +358,10 @@ The table below contains information on how to calculate view time depending on 
 
 | Level | Method | Display Default | Video Default | Notes |
 |-------|--------|-----------------|---------------|-------|
-| 0 | Default view time | 0.25 MB | 4 MB, 6 MB instream | Instream figure should be used in environments where heavy ad intervention does not apply. |
-| 1 | 100% of creative data assumed to be transferred | | | |
-| 2 | Completion rate proxy | | | E.g. 50% video completion rate &rarr; 50% of video data transferred. If view time data is available in quartiles rather than as a mean, calculations should overestimate by using the higher bound of the quartile (e.g. if a given portion of users is reported to have watched between 0 and 3 seconds of a video ad, they are assumed to have watched 3 seconds).|
-| 3 | Data transfer measurement | | | Option when tooling that enables logging precise payloads is available. Eliminates need for overhead term. |
-| Overhead | Default non-creative asset payload | 0.05 MB | 0.35 MB | Add-on to levels 0-2. Overestimation due to caching. |
+| 0 | Default view time | 3 seconds | 30 seconds | For cases where no view time data is available. |
+| 1 | Average campaign-level view time | | | Flat campaign average view time used for every device type. |
+| 2 | Average device-type view time | | | Average view time available per device type. |
+| Overhead | Minimum view time | 1 second | 2 seconds | Based on MRC standard for viewability - used to account for device usage in cases where view time is not reported for ads that fail to meet viewability specifications. |
 
 #### Data
 
