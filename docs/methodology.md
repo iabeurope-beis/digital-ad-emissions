@@ -375,10 +375,10 @@ The table below contains information on how to calculate view time depending on 
 | Mobile Embodied Intensity | $6.55 \times 10^{-6}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a mobile for 1 second. | |
 | Tablet Use-phase Energy Intensity | $1.40 \times 10^{-6}$ | kWh per second | Energy consumption associated with viewing an ad on a tablet for 1 second. | |
 | Tablet Embodied Intensity | $2.57 \times 10^{-5}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a tablet for 1 second. | |
-| PC Use-phase Energy Intensity | $3.80 \times 10^{-5}$ | kWh per second | Energy consumption associated with viewing an ad on a PC for 1 second. | |
-| PC Embodied Intensity | $8.65 \times 10^{-6}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a PC for 1 second. | |
-| TV Use-phase Energy Intensity | $1.54 \times 10^{-5}$ | kWh per second | Energy consumption associated with viewing an ad on a TV for 1 second. | |
-| TV Embodied Intensity | $5.45 \times 10^{-6}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a TV for 1 second. | |
+| TV Use-phase Energy Intensity | $3.80 \times 10^{-5}$ | kWh per second | Energy consumption associated with viewing an ad on a PC for 1 second. | |
+| TV Embodied Intensity | $8.65 \times 10^{-6}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a PC for 1 second. | |
+| PC Use-phase Energy Intensity | $1.54 \times 10^{-5}$ | kWh per second | Energy consumption associated with viewing an ad on a TV for 1 second. | |
+| PC Embodied Intensity | $5.45 \times 10^{-6}$ | kg CO2e per second | Embodied emissions associated with viewing an ad on a TV for 1 second. | |
 
 ##### Device Distribution Defaults
 
