@@ -126,6 +126,22 @@ Selection has two major components: estimating the volume of server and networki
 | Video Server Factor | Constant | 1.316 | | Number of servers assumed to be activated per ads.txt line for a video ad. | Based on proprietary data from IAB Europe members. |
 | Video Call Factor | Constant | 1.334 | | Number of requests/bids assumed to be transferred per ads.txt line for a video ad. | Based on proprietary data from IAB Europe members. |
 
+#### Implementation Requirements
+
+When parsing ads.txt files to obtain line counts for the Selection stage, follow guidance in the official [Authorized Digital Sellers specification](https://iabtechlab.com/ads-txt/). 
+
+When using ads.txt files to implement this methodology:
+
+1. **Subdomain Handling**: Map placements to the correct lines when `SUBDOMAIN` variables are present.
+   - For placements on **root domain pages**: Use the ads.txt file at the root domain, excluding subdomain-specific lines
+   - For placements on **subdomain pages**: Refer to the corresponding `SUBDOMAIN` lines in the root domain ads.txt file
+
+2. **Line Counting Exclusions**: Exclude the following from line counts:
+   - Variable declaration lines (e.g., `VARIABLES`, `SUBDOMAIN`)
+   - Comment lines (lines beginning with `#`)
+   - Duplicate entries (identical seller records)
+   - Invalid/malformed lines (incorrect formatting, invalid syntax)
+
 The following adjustments are made depending on buy type:
 - **Direct:**
     - Number of activated servers = 2
