@@ -269,7 +269,7 @@ The table below contains information on how to calculate payload depending on th
 
 ##### Fixed / Mobile Defaults
 
-These can be used in cases where no data is available on connection type and are based on aggregate data submitted by Teads.
+These can be used in cases where no data is available on connection type and are based on aggregate data submitted by Teads. In this data, satellite networks are classified as mobile networks.
 
 | Region | Countres Included in Sample | Fixed Ratio | Mobile Ratio |
 |--------|-----------------------------|-------------|--------------|
@@ -277,6 +277,10 @@ These can be used in cases where no data is available on connection type and are
 | APAC | Australia, Bangladesh, Brunei, Cambodia, China, Cook Islands, Fiji, India, Indonesia, Japan, Kiribati, Laos, Malaysia, Maldives, Marshall Islands, Micronesia, Mongolia, Myanmar, Nepal, New Caledonia, New Zealand, Niue, North Korea, Pakistan, Palau, Papua New Guinea, Philippines, Singapore, Solomon Islands, South Korea, Sri Lanka, Thailand, Timor Leste, Tonga, Tuvalu, Vietnam | 0.6768 | 0.3232 |
 | NA | United States of America, Canada | 0.8608 | 0.1392 |
 | LATAM | Mexico, Guatemala, Honduras, Nicaragua, El Salvador, Costa Rica, Panama, Belize, Haiti, Cuba, Dominican Republic, Jamaica, Trinidad & Tobago, Bahamas, Barbados, St. Lucia, Grenada, St. Vincent & Grenadines, Antigua & Barbuda, Dominica, St. Kitts & Nevis, Brazil, Colombia, Argentina, Peru, Venezuela, Chine, Ecuador, Bolivia, Paraguay, Uruguay, Suriname, Guyana | 0.7145 | 0.2855 |
+
+#### Implementation Guidance
+
+For the purposes of this methodology, **satellite networks should be classified as mobile networks** when applying emission factors. This is consistent with how the default network split data was collected and analyzed. Separate satellite network emission factors may be introduced in an upcoming update.
 
 #### Equation
 
