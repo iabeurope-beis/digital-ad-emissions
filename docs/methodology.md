@@ -150,6 +150,14 @@ The following adjustments are made depending on buy type:
     - Number of activated servers = 500
     - Number of calls = 0
 
+#### Implementation Guidance
+
+The methodology relies upon a 50/50 weighted average between the grid emissions factor in the country where the user is located and a regional grid emissions factor calculated using publicly available data on the location of data centers in each region. Users of the methodology with visibility over all activated servers, i.e. end-to-end platforms that offer both supply-side and demand-side services, are encouraged to use the best data available on data center locations. If the locations of all activated servers are known, the weighted average may be substituted with grid EFs reflecting these locations. 
+
+In such cases, users should keep the following in mind:
+1. All guidance from the [Grid Emissions Factors](#grid-emissions-factors) section applies.
+2. The substitution may violate the Conservativeness design principle as using better data may lead to higher emission estimates. See the [Conservativeness section](design.md#conservativeness) for more information.
+
 #### Equations
 $$
 \begin{align*}
