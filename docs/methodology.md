@@ -62,7 +62,7 @@ Selection has two major components: estimating the volume of server and networki
 | --- | --- | --- | --- | --- | --- |
 | Impressions | Input | | | Number of impressions. | Disaggregated by location, buy type.|
 | Location | Input | | | Country of users consuming ads. | |
-| Ads.txt Lines | Input | | | Number of ads.txt lines per publisher. | If a publisher has not adopted the authorised digital sellers specification and still sells ad space programmatically, a conservative default of 3000 lines may be used. |
+| Ads.txt Lines | Input | 1,000 (default) | | Number of ads.txt lines per publisher. | If a publisher has not adopted the authorised digital sellers specification and still sells ad space programmatically, use the digital default of 1,000 lines. The default for TV is 500 lines. These defaults are based on an independent analysis of datasets. |
 | Local Grid Intensity | Input | | kg CO2e per kWh | Emissions intensity of electricity grid in the country where the user consuming the ad is located. | 50% of servers are assumed to be located in the same country as the consuming user. |
 | Foreign Grid Intensity | Input | | kg CO2e per kWh | Emissions intensity of electricity grid in the region where the user consuming the ad is located, weighted by data center locations. | 50% of servers are assumed to be distributed across the consuming user's region. See table further below. |
 | Server Use-phase Intensity | Constant | $3.41 \times 10^{-7}$ | kWh per processed ad opportunity | Energy intensity of a server processing an opportunity. | Based on server model. |

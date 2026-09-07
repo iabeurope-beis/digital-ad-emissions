@@ -15,6 +15,7 @@ This document contains sources for the methodology's data points by stage.
 | Overhead Factor | RTB House |
 | Share of Servers in Local Geo / Abroad | Estimate aligned with Digital Carbon Footprint framework |
 | Server / Call Factors | Data contributed by IAB Europe members |
+| Ads.txt Line Defaults | Data contributed by IAB Europe members |
 
 ### Delivery
 
