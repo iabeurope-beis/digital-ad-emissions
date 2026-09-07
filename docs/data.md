@@ -3,15 +3,6 @@
 This document contains sources for the methodology's data points by stage.
 
 ## Stages
-### Storage
-
-| Variable | Source |
-| --- | --- |
-| HDD Intensity | [Tannu, S., & Nair, P. J. (2023).](https://arxiv.org/pdf/2207.10793) |
-| SSD Intensity | [Tannu, S., & Nair, P. J. (2023).](https://arxiv.org/pdf/2207.10793) |
-| Cloud Intensity | [ADEME, Base Empreinte](https://base-empreinte.ademe.fr/) |
-| LTO Intensity | [Fujifilm estimates on LTO-8](https://asset.fujifilm.com/www/de/files/2023-10/97ddc3473883421cef1fb820d236dfa2/Improving_IT_Sustainability_with_Tape_BJC_0.pdf) |
-
 ### Selection
 
 | Variable | Source |

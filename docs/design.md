@@ -14,10 +14,11 @@ However, organisations from other market segments can still use the methodology:
 
 The methodology covers the following stages of a digital advertising campaign:
 
-- **Storage** refers to the storage of all assets produced for a campaign at a post-production level.
 - **Selection** refers to the buying and selling of digital ad space, including real-time bidding.
 - **Delivery** refers to transfering the ad creative to the consuming user.
 - **Consumption** refers to the activity on the consuming user's device that is required to display the ad.
+
+Post-production storage is excluded because it is a cross-channel consideration rather than one specific to digital advertising. It should be addressed at campaign level. The former calculation is retained in the [legacy post-production storage methodology](legacy/post-production-storage.md) for reference.
 
 ### Corporate Overhead
 
